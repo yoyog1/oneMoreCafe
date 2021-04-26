@@ -1,0 +1,723 @@
+* {
+  height: auto;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  * li, * p {
+    font-size: 22px;
+  }
+}
+
+* a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  * a {
+    font-size: 25px;
+  }
+}
+
+header, h2 {
+  color: #fff;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background-image: url("../if-cafe/food-2940553_1280.jpg");
+  background-size: cover;
+  background-position: left top;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media (min-width: 1025px) {
+  header {
+    height: 768px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
+}
+
+header ul {
+  padding-right: 10px;
+  height: 60px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1025px) {
+  header ul {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-shadow: 0 0 8px #000;
+  }
+  header ul li {
+    margin-right: 25px;
+    line-height: 100%;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+  }
+  header ul li a {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  header ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-shadow: 0 0 12px #000;
+    text-align: center;
+  }
+  header ul li {
+    line-height: 100%;
+    font-weight: bold;
+    width: auto;
+    height: auto;
+  }
+  header ul li a {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  header ul {
+    display: none;
+  }
+  header ul li {
+    width: 50%;
+  }
+}
+
+header h1 {
+  height: 100vh;
+  width: 100%;
+  font-size: 110px;
+  text-shadow: 0 0 50px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1025px) {
+  header h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    text-align: left;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main i {
+  height: auto;
+  width: auto;
+  -webkit-box-shadow: 0 10px 10px #000;
+          box-shadow: 0 10px 10px #000;
+  border-radius: 50%;
+  font-size: 45px;
+  color: #520c0c;
+  background-color: #E03131;
+  display: none;
+  position: fixed;
+}
+
+main i.fa-mug-hot {
+  display: none;
+  padding: 15px;
+  z-index: 2;
+}
+
+main i.fa-coffee {
+  padding: 15px 9.5px;
+}
+
+@media (max-width: 550px) {
+  main i {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (min-width: 551px) {
+  main i {
+    right: 40px;
+    bottom: 40px;
+  }
+}
+
+main i:hover {
+  cursor: pointer;
+}
+
+section {
+  background-color: #fff;
+}
+
+section .section-title {
+  width: 100%;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1025px) {
+  section .section-title {
+    height: 260px;
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section .section-title {
+    height: 150px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  section .section-title {
+    font-size: 25px;
+    height: 90px;
+  }
+}
+
+section .section-title h2 {
+  text-shadow: 0 0 10px #000;
+}
+
+section h3 {
+  font-size: 35px;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: #E03131 5px  solid;
+  width: auto;
+  display: inline-block;
+}
+
+section.about {
+  background-image: url("../if-cafe/girl-1848478_1920.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+section.about .inner {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 100px 0 100px;
+}
+
+section.about .inner a {
+  margin: 0 auto;
+  text-decoration: none;
+  border: #E03131 2px solid;
+  padding: 13px 30px;
+  margin-top: 25px;
+  color: #000;
+}
+
+@media (min-width: 1025px) {
+  section.about .inner .inner-contents ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 30px 0 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.about .inner .inner-contents ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  section.about .inner .inner-contents ul li {
+    width: 35%;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.about .inner .inner-contents ul li {
+    width: 80%;
+  }
+}
+
+section.sns {
+  background-image: url("../if-cafe/coffee-5132832_1920.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+section.sns .inner {
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  section.sns .inner {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 100px 0 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.sns .inner {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 100px 0 100px;
+  }
+}
+
+section.sns .inner div {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1025px) {
+  section.sns .inner div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.sns .inner div {
+    width: 100%;
+    margin-top: 70px;
+  }
+}
+
+section.sns .inner div h3 {
+  margin-bottom: 25px;
+}
+
+section.sns .inner div.youtube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1025px) {
+  section.sns .inner .inner-contents.youtube-timeline {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.sns .inner .inner-contents.youtube-timeline {
+    width: 500px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 550px) {
+  section.sns .inner .inner-contents.youtube-timeline {
+    width: 333px;
+    height: 233px;
+  }
+}
+
+section.sns .inner .inner-contents.twitter-timeline {
+  display: block;
+}
+
+section.location {
+  background-image: url("../if-cafe/restaurant-4011989_1920.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+section.location .inner {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 100px 0 100px;
+}
+
+section.location .inner .inner-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: colunm;
+          flex-direction: colunm;
+  padding: 30px 0 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.location .inner .inner-contents .location-map {
+  height: 400px;
+  border: 0;
+  /**iframe{
+                            margin: 0 150px;
+                            width:auto;
+                            height: 400px;
+                            display: block;
+                           
+                        }**/
+}
+
+@media (min-width: 551px) {
+  section.location .inner .inner-contents .location-map {
+    width: 67%;
+  }
+  section.location .inner .inner-contents .location-map .accessAdressOpen {
+    width: 67%;
+  }
+}
+
+@media (max-width: 550px) {
+  section.location .inner .inner-contents .location-map {
+    width: 85%;
+  }
+}
+
+section.location .inner .inner-contents .accessAdressOpen {
+  width: 67%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.location .inner .inner-contents .accessAdressOpen p {
+  padding-top: 15px;
+}
+
+section.menu {
+  background-image: url("../if-cafe/coffee-802057_1920.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media (min-width: 1025px) {
+  section.menu .inner {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 100px 0 100px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.menu .inner {
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    padding: 100px 0 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+section.menu .inner .coffee, section.menu .inner .food, section.menu .inner .other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1025px) {
+  section.menu .inner .coffee {
+    width: 32%;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.menu .inner .coffee {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  section.menu .inner .foodOther {
+    width: 32%;
+    padding-left: 30px;
+    border-left: #000 0.2px solid;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.menu .inner .foodOther {
+    width: 100%;
+  }
+}
+
+section.menu .inner .inner-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px 0 30px;
+}
+
+@media (min-width: 1025px) {
+  section.menu .inner .inner-contents {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.menu .inner .inner-contents {
+    width: 90%;
+  }
+}
+
+section.menu .inner .inner-contents li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 30px;
+}
+
+section.menu .inner .inner-contents li p.name {
+  border-bottom: #000 1px dashed;
+  width: 75%;
+}
+
+section.menu .inner .inner-contents li p.price {
+  width: 20%;
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+}
+
+footer small {
+  font-size: 15px;
+  line-height: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=if-cafe.css.map */
